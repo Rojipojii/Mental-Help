@@ -1,0 +1,274 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6ffe6;
+    margin: 0;
+    padding-top: 50px;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Different colors for Mental and Help */
+.mental {
+    color: #3498db; /* Blue color for "Mental" */
+}
+
+.help {
+    color: #e74c3c; /* Red color for "Help" */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+nav ul li a.active {
+    background-color: red;
+    color: white;
+}
+
+/* Hamburger (Three Lines) Styling */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Hide navigation on small screens */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Show hamburger on small screens */
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Show the nav list when active */
+.nav-active {
+    display: flex;
+}
+
+
+/* Responsive Header */
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+/* Main content styling */
+.contact-form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    background-color: #ccffcc;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Illustration styling */
+.illustration {
+    width: 50%;
+}
+
+.illustration img {
+    width: 100%;
+}
+
+/* Responsive adjustments for main content */
+@media (max-width: 992px) {
+    .contact-form-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .contact-form,
+    .illustration {
+        width: 80%;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #073c91;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-contact p, .footer-social a {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+    border-top: 1px solid #92b9f7;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links ul {
+        padding: 0;
+    }
+
+    .footer-contact p, .footer-social a {
+        font-size: 14px;
+    }
+}

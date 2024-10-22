@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentalHelp - Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <span class="mental">Mental</span><span class="help">Help</span>
+        </h1>
+        <nav>
+            <ul  id="navList">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="Book.html" >Book A Session</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="login.html">Log In</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- This is the three-line icon -->
+              </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-form-container">
+            <form class="contact-form">
+                <h2>Contact us</h2>
+                <label for="name">Name (field required)</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <label for="phone">Phone number (field required)</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Message (field required)</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send message</button>
+            </form>
+            <div class="illustration">
+                <img src="images/contact.png" alt="People talking">
+            </div>
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo-footer">
+                <h1>
+                    <span class="mental">Mental</span><span class="help">Help</span>
+                </h1>
+                <p>Our vision is to provide convenience and help increase your overall mental wellness.</p>
+            </div>
+            <div class="footer-links">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Featured</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>+977 9856555547</p>
+                <p>Kathmandu</p>
+                <p><a href="mailto:mentalhelp@gmail.com">mentalhelp@gmail.com</a></p>
+            </div>
+            <div class="footer-social">
+                <h3>Socials</h3>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2022 MentalHelp. All rights reserved.</p>
+            <p><a href="#">Privacy & Policy</a> | <a href="#">Terms & Conditions</a></p>
+        </div>
+    </footer>
+    <script src="js/navbar.js"></script>
+</body>
+</html>

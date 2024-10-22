@@ -1,0 +1,306 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6ffe6;
+    margin: 0;
+    padding-top: 50px;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Different colors for Mental and Help */
+.mental {
+    color: #3498db; /* Blue color for "Mental" */
+}
+
+.help {
+    color: #e74c3c; /* Red color for "Help" */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+nav ul li a.active {
+    background-color: red;
+    color: white;
+}
+
+/* Hamburger (Three Lines) Styling */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Hide navigation on small screens */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Show hamburger on small screens */
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Show the nav list when active */
+.nav-active {
+    display: flex;
+}
+
+
+/* Responsive Header */
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+/* Main Content Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 70px 20px; /* Padding adjusted for fixed header */
+}
+
+/* Articles Section */
+.articles-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    flex: 1;
+    width: 100%;
+}
+
+/* Form Section */
+.form-section {
+    flex: 1;
+    max-width: 100%;
+    background-color: #6fb5ed;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Form Styles */
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.form-section label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Input and Textarea */
+.form-section input,
+.form-section textarea {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Button Styling */
+.form-section button {
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-section button:hover {
+    background-color: #555;
+}
+
+/* Responsive Form */
+@media (max-width: 768px) {
+    .form-section {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .form-section input,
+    .form-section textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .form-section button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .form-section {
+        margin: 20px 0;
+    }
+
+    .form-section input,
+    .form-section textarea {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .form-section button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+/* Footer Styles */
+footer {
+    background-color: #073c91;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #92b9f7;
+    padding-top: 20px;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        margin-top: 20px;
+    }
+}
+
+/* General Responsive Styles */
+@media (max-width: 576px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .form-section {
+        margin: 20px 0;
+    }
+}

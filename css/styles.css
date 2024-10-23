@@ -10,7 +10,7 @@ body, html {
 
 /* Background Image Styling */
 body {
-    background: url('images/image.png') no-repeat center center fixed;
+    background: url('./images/image.png') no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh
 }
